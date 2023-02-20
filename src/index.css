@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@font-face {
+  font-family: 'TanoheSans-Regular';
+  src: local('Tanohe'), url(./assets/fonts/TanoheSans-Regular.ttf) format('ttf');
+}
+@tailwind utilities;
+
+
