@@ -1,0 +1,56 @@
+.cont{
+    --blur-size: 30px;
+    --shape-1-size: 380px;
+    --shape-3-size: 280px;
+    --shapes-opacity: 40%;
+    width: 480px;
+    height: 480px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+   
+  }
+  .shape1 {
+    width: var(--shape-1-size);
+    height: var(--shape-1-size);
+    background-color: #F22FB0;
+    border-radius: 50%;
+    position: absolute;
+    left: -1rem;
+    top: 0;
+    mix-blend-mode: multiply;
+    filter: blur(var(--blur-size));
+    opacity: var(--shapes-opacity);
+    animation: blob ease-in 7s infinite;
+  }
+  
+  .shape2 {
+    width: var(--shape-1-size);
+    height: var(--shape-1-size);
+    background-color: #F22FB0;
+    border-radius: 50%;
+    position: absolute;
+    right: -1rem;
+    top: 0;
+    mix-blend-mode: multiply;
+    filter: blur(var(--blur-size));
+    opacity: var(--shapes-opacity);
+    animation: blob ease-in 7s infinite;
+    animation-delay: 2s;
+    animation-direction: reverse;
+  }
+  
+  @keyframes blob {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+        transform: translate(300px, 100px) scale(1.1);
+    }
+    66% {
+        transform: translate(-300px, 100px) scale(0.9);
+    }
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+  }
