@@ -4,16 +4,17 @@ import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Skill from './components/skill'
 import Marquee from "react-fast-marquee";
-
+import cons from './assets/img/maintenance.gif'
 
 
 function App() {
   return (
-    <div className='w-full h-screen bg-ground'>
-      
-        <Navbar />
+    <div className='w-full h-screen bg-ground flex justify-center items-center'>
+      <h1 className='text-cyan-800 text-4xl font-bold'>Website Under Construction</h1>
+      <img src={cons} alt="" />
+        {/* <Navbar /> */}
         {/* <Header/> */}
-        <Hero />
+        {/* <Hero />
         <Marquee>
         <div className='flex justify-evenly md:justify-evenly lg:justify-evenly mt-4 text-xl overflow-x-auto'>
           <div className='md:w-[165px] md:h-[58px]  bg-[#95A672] rounded-full py-2 px-5'>HTML</div>
@@ -24,7 +25,7 @@ function App() {
           <div className='md:w-[165px] md:h-[58px] bg-[#95A672] rounded-full'>Py</div>
        
         </div>
-        </Marquee>
+        </Marquee> */}
     </div>
   )
 }
